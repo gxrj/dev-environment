@@ -1,5 +1,7 @@
 # nodejs-install-recipe
 
+<b>Preamble</b>: it uses snap format because there are lots of benefits with it (security and dependencies, for instance), if you do not have snap installed and don´t mind installing it the run <code>sudo apt install snapd -y</code> if you're running a debian-based distro
+
 - First, install nodejs using snap
 
       $ sudo snap install node --classic
