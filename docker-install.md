@@ -1,3 +1,7 @@
+## Preamble
+
+<p> It uses snap format because there are lots of benefits with it (security and dependencies, for instance), if you do not have snap installed and don´t mind installing it the run <code>sudo apt install snapd -y</code> if you're running a debian-based distro</p>
+
 ## Installation steps
 
 ### With snap installed, perform docker installation
