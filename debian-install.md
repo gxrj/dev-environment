@@ -1,10 +1,17 @@
-<b>Warning</b>: The following recipe was applied for a machine that uses <code>atheros</code> and <code>realtek</code> wireless drivers. Ignore anything related to it if your machine does not need those.
+## Preamble
 
 ### Download Debian non-free iso at: 
 [Debian Version 11.4 link](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/firmware-11.4.0-amd64-netinst.iso)
 
 ### Download missing network driver at:
 [Atheros firmware link](http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree/firmware-atheros_20210818-1_all.deb)
+
+### Download Rufus Iso burner at:
+[Rufus link](https://rufus.ie/en/)
+
+<b>Warning</b>: The following recipe was applied for a machine that uses <code>atheros</code> and <code>realtek</code> wireless drivers. Ignore anything related to it if your machine does not need those.
+
+## Installation steps
 
 * Burn debian iso into Rufus software
 
