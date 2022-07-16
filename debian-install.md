@@ -1,6 +1,6 @@
 ## Preamble
 
-<b>Warning</b>: The following recipe was applied for a machine that uses <code>atheros</code> and <code>realtek</code> wireless drivers. Ignore anything related to it if your machine does not need those.
+<b>Warning</b>: The following recipe was applied for a machine that uses <code>atheros</code> and <code>realtek</code> wireless drivers. Ignore anything related to it if your machine does not need those and search for your missing drivers at this [link](http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree).
 
 ### Download Debian non-free iso at: 
 [Debian Version 11.4 link](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.4.0+nonfree/amd64/iso-cd/firmware-11.4.0-amd64-netinst.iso)
