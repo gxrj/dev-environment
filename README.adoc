@@ -8,7 +8,7 @@
 
 ==== Nodejs Recipe:
 
-* link:nodejs-instal.md[Install nodejs and move its global modules to users scope folder]
+* link:nodejs-install.md[Install nodejs and move its global modules to users scope folder]
 
 ==== Docker Recipes for:
 
