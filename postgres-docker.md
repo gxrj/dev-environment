@@ -1,3 +1,5 @@
+## Configuration steps
+
 #### Creates a **docker volume** to persist data named as *postgres-data*
     $ docker volume create postgres-data
 
