@@ -1,1 +1,13 @@
+==== Debian Recipe:
 
+* link:debian-install.md[Install Debian]
+
+==== Github Auth Token (Auto-login) Recipe:
+
+* link:github-token-persist.md[Persist your personal token into your Operating System]
+
+==== Docker Recipes for:
+
+* link:docker-install.md[Install docker]
+
+* link:postgres-docker-install.md[Install & run postgresql]
