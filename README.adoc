@@ -14,4 +14,4 @@
 
 * link:docker-install.md[Install docker]
 
-* link:postgres-docker-install.md[Install & run postgresql]
+* link:postgres-docker.md[Install & run postgresql]
