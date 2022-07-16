@@ -1,4 +1,4 @@
-==== Debian Recipe:
+==== Debian Install Recipe:
 
 * link:debian-install.md[Install Debian]
 
