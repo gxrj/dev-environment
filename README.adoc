@@ -6,6 +6,10 @@
 
 * link:github-token-persist.md[Persist your personal token into your Operating System]
 
+==== Nodejs Recipe:
+
+* link:nodejs-instal.md[Install nodejs and move its global modules to users scope folder]
+
 ==== Docker Recipes for:
 
 * link:docker-install.md[Install docker]
