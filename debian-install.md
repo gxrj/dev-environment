@@ -55,7 +55,7 @@
 
       sudo dmesg
 
-In the example used to install debian, the missing firmwares were <b>rtl_nic/rtl8168h-2.fw</b>, <b>ath10k/pre-cal-pci-0000:02:00.0.bin</b>, <b>ath10k/pre-cal-pci-0000:02:00.0.bin</b> and <b>i915/icl_dmc_ver1_09.bin</b>. So use <code>apt-cache search</code> command followed by the firmware's name to find the correspoding package as it follows:<br>
+In the example used to install debian, the missing firmwares were: <code>rtl_nic/rtl8168h-2.fw</code>, <code>ath10k/pre-cal-pci-0000:02:00.0.bin</code>, <code>ath10k/cal-pci-0000:02:00.0.bin</code> and <code>i915/icl_dmc_ver1_09.bin</code>. So use <code>apt-cache search</code> command followed by the firmware's name to find the correspoding package as it follows:<br>
 
 * <code>firmware-realtek</code> package contains <b>rtl_nic/rtl8168h-2.fw</b> driver
 
@@ -73,7 +73,7 @@ In the example used to install debian, the missing firmwares were <b>rtl_nic/rtl
       sudo apt-cache search ath10k/
       sudo apt install firmware-atheros
       
-* Install your desired packages like desktop environment and other things
+* Install your desired packages like desktop environment and other things, in this case its installing kde plasma desktop environment and other utilities
 
       sudo apt install kde-plasma-desktop plasma-nm ark kwrite gwenview qapt-deb-installer okular -y
       sudo apt purge kdeconnect -y
