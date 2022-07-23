@@ -82,7 +82,7 @@ In the example used to install debian, the missing firmwares were: <code>rtl_nic
       
 * Install your desired packages like desktop environment and other things, in this case its installing kde plasma desktop environment and other utilities
 
-      sudo apt install kde-plasma-desktop plasma-nm ark kwrite gwenview qapt-deb-installer okular -y
+      sudo apt install kde-plasma-desktop plasma-nm ark kwrite gwenview qapt-deb-installer okular okular-extra-backends -y
       sudo apt purge kdeconnect -y
 
 * Set the system to local time if you have dualboot
