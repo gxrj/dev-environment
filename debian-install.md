@@ -98,8 +98,8 @@ Install your desired packages like desktop environment and other things:
 
 * [Optional] For xfce4:
 
-      sudo apt install xfce4 xfce4-power-manager xfce4-terminal nm-tray lightdm slick-greeter gdebi mousepad atril unzip -y
-      sudo apt install menulibre papirus-icon-theme -y
+      sudo apt install xfce4 xfce4-power-manager xfce4-terminal nm-tray lightdm slick-greeter gdebi mousepad unzip -y
+      sudo apt install atril menulibre papirus-icon-theme -y
 
 * Set the system to local time if you have dualboot
    
