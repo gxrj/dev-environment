@@ -90,13 +90,13 @@ In the example used to install debian, the missing firmwares were: <code>rtl_nic
       
 Install your desired packages like desktop environment and other things:
 
-* [Optional] For kde-plasma and its the minimal set of utilities:
+* [Optional] For <code>kde-plasma</code> and its the minimal set of utilities:
 
       sudo apt install kde-plasma-desktop plasma-nm ark kwrite gwenview qapt-deb-installer okular okular-extra-backends -y
       sudo apt install papirus-icon-theme -y
       sudo apt purge kdeconnect -y
 
-* [Optional] For xfce4:
+* [Optional] For <code>xfce4</code>:
 
       sudo apt install xfce4 xfce4-power-manager xfce4-terminal nm-tray lightdm slick-greeter gdebi mousepad unzip -y
       sudo apt install atril menulibre papirus-icon-theme -y
