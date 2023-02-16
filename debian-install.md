@@ -97,7 +97,7 @@ Install your desired packages like desktop environment and other things:
 
 * [Optional] for xfce4:
 
-      sudo apt install xfce4 xfce4-power-manager xfce4-terminal nm-tray lightdm slick-greeter gdebi menulibre
+      sudo apt install xfce4 xfce4-power-manager xfce4-terminal nm-tray lightdm slick-greeter gdebi menulibre -y
 
 * Set the system to local time if you have dualboot
    
