@@ -31,13 +31,21 @@
 
 * When finished, reboot and start the new installed system
 
-* Add your credentials, then use the following commands to make wireless interface work:
+* After rebooting your system and logging, check if your wireless interface is already working:
 
       sudo iwlist scan
+      
+* If not, try search for your wireless network interface name:
+ 
       sudo iw dev
-      sudo ip link set wlp2s0 up
+      
+ Wireless interface names starts with the 'w' letter. In my example the wireless interface found was <code>wlp2s0</code> but it could be <code>wlan0</code> it may vary from each hardware/operating system.
+ 
+ * With the wireless network interface label found (e.g. <code>wlp2s0</code>), set it up:
+      
+       sudo ip link set wlp2s0 up
     
-* Then scan the available access points
+* Then test if it works by scanning the available access points
 
       sudo iwlist scan | less
     
@@ -80,10 +88,16 @@ In the example used to install debian, the missing firmwares were: <code>rtl_nic
       sudo apt-cache search ath10k/
       sudo apt install firmware-atheros
       
-* Install your desired packages like desktop environment and other things, in this case its installing kde plasma desktop environment and other utilities
+Install your desired packages like desktop environment and other things:
+
+* [Optional] If you desire to use kde-plasma the minimal set of utilities is:
 
       sudo apt install kde-plasma-desktop plasma-nm ark kwrite gwenview qapt-deb-installer okular okular-extra-backends -y
       sudo apt purge kdeconnect -y
+
+* [Optional] for xfce4:
+
+      sudo apt install xfce4 xfce4-power-manager xfce4-terminal nm-tray lightdm slick-greeter gdebi menulibre
 
 * Set the system to local time if you have dualboot
    
