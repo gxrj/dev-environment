@@ -21,7 +21,7 @@
 
 ## Installation steps
 
-* Follow the steps provided and prompt by expert install
+* Follow the steps provided and prompted by expert install
 
 * At <code>Detect Network Hardware</code> step ignore missing firmwares that contais <b>cal-pci</b> or <b>pre-cal-pci</b> words
 
