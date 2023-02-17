@@ -1,4 +1,4 @@
-==== Debian Minimal Install Recipe:
+==== Debian-Minimal Install Recipe:
 
 * link:debian-install.md[Install Debian]
 
