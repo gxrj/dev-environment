@@ -11,7 +11,7 @@
 ### Download Rufus Iso burner at:
 [Rufus link](https://rufus.ie/en/)
 
-## Installation steps
+## Preparation steps
 
 * Burn debian iso into Rufus software
 
@@ -19,7 +19,9 @@
 
 * Reboot the hardware with the pendrive plugged in
 
-* Proceed the steps
+## Installation steps
+
+* Follow the steps provided and prompt by expert install
 
 * At <code>Detect Network Hardware</code> step ignore missing firmwares that contais <b>cal-pci</b> or <b>pre-cal-pci</b> words
 
@@ -30,6 +32,8 @@
 * Select the wireless interface and then proceed with the installation steps
 
 * When finished, reboot and start the new installed system
+
+## Post install wifi-setup
 
 * After rebooting your system and logging, check if your wireless interface is already working:
 
@@ -60,6 +64,8 @@
           wpa-essid Put_Your_Router_SSID_Name_Here
           wpa-psk Put_Your_Router_Password_Here
 
+<b>Warning:</b> Do no forget to remove those credentials after install your desktop environment
+
 * Update your wireless interface with the chosen router's credentials
 
       sudo ifup wlp2s0
@@ -69,6 +75,8 @@
 * By suceeding to get an ip showed by the last command above, search for the necessary missing packages 
 
       sudo dmesg
+
+## Missing driver fixes (Optional/Specific)
 
 In the example used to install debian, the missing firmwares were: <code>rtl_nic/rtl8168h-2.fw</code>, <code>ath10k/pre-cal-pci-0000:02:00.0.bin</code>, <code>ath10k/cal-pci-0000:02:00.0.bin</code> and <code>i915/icl_dmc_ver1_09.bin</code>. So use <code>apt-cache search</code> command followed by the firmware's name to find the correspoding package as it follows:<br>
 
@@ -88,6 +96,8 @@ In the example used to install debian, the missing firmwares were: <code>rtl_nic
       sudo apt-cache search ath10k/
       sudo apt install firmware-atheros
       
+## Desktop and utilities install
+
 Install your desired packages like desktop environment and other things:
 
 * [Optional] For <code>kde-plasma</code> and its the minimal set of utilities:
@@ -101,17 +111,21 @@ Install your desired packages like desktop environment and other things:
       sudo apt install xfce4 xfce4-power-manager xfce4-battery-plugin xfce4-terminal nm-tray lightdm slick-greeter -y
       sudo apt install gdebi unzip mousepad atril menulibre papirus-icon-theme -y
 
+## Hardware clock settings for dualboot
+
 * Set the system to local time if you have dualboot
    
       sudo timedatectl set-local-rtc 1
-   
-* Reboot the system if you will (Optional)
 
-      sudo init 0
+## Removing static wifi credentials
 
 * Delete the wireless interface's configuration previous added (mainly the router credentials) and reset the wireless interface
 
       sudo nano /etc/network/interfaces
       sudo service NetworkManager restart
+
+* Reboot the system if you will (Optional)
+
+      sudo init 0
 
 * If your are using UEFI configure the bootloader at the BIOS
