@@ -59,6 +59,8 @@
 
 * Inside this file the following commands set the wireless interface with the router credentials, those commands should be added at the end of the file
 
+      #put the following contents in /etc/network/interfaces file:
+      
       allow-hotplug wlp2s0
       iface wlp2s0 inet dhcp
           wpa-essid Put_Your_Router_SSID_Name_Here
@@ -106,10 +108,18 @@ Install your desired packages like desktop environment and other things:
       sudo apt install papirus-icon-theme -y
       sudo apt purge kdeconnect -y
 
+* [Optional] The following command sets <code>kde-plasma theme</code> for <code>libreoffice</code>:
+
+      sudo apt install libreoffice-kf5
+
 * [Optional] For <code>xfce4</code> :
 
       sudo apt install xfce4 xfce4-power-manager xfce4-battery-plugin xfce4-terminal nm-tray lightdm slick-greeter -y
       sudo apt install gdebi unzip mousepad atril menulibre papirus-icon-theme -y
+
+* [Optional] The following command sets <code>gtk theme</code> for <code>libreoffice</code>:
+
+      sudo apt install libreoffice-gtk
 
 ## Hardware clock settings for dualboot
 
