@@ -51,7 +51,7 @@
     
 * Then test if it works by scanning the available access points
 
-      sudo iwlist scan | less
+      sudo iw dev wlp2s0 scan | less
     
 * After finding your router, persist its credentials at <code>/etc/network/interfaces</code> for a short period
     
