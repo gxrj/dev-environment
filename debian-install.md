@@ -2,8 +2,8 @@
 
 <b>Warning</b>: The following recipe was applied for a machine that uses <code>atheros</code> and <code>realtek</code> wireless drivers. Ignore anything related to it if your machine does not need those and search for your missing drivers at this [link](http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree).
 
-### Download Debian non-free iso at: 
-[Debian non-free iso folder link](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current/amd64/iso-cd/)
+### Download Debian iso at: 
+[Debian iso folder link](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/)
 
 ### Download missing network driver at:
 [Atheros firmware link](http://ftp.debian.org/debian/pool/non-free/f/firmware-nonfree/firmware-atheros_20210818-1_all.deb)
