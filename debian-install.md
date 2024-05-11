@@ -66,7 +66,7 @@
           wpa-essid Put_Your_Router_SSID_Name_Here
           wpa-psk Put_Your_Router_Password_Here
 
-<b>Warning:</b> Do no forget to remove those credentials after install your desktop environment
+<b>Warning:</b> Do no forget to *remove all those contents provided above* after install your desktop environment
 
 * Update your wireless interface with the chosen router's credentials
 
@@ -129,13 +129,23 @@ Install your desired packages like desktop environment and other things:
 
 ## Removing static wifi credentials
 
-* Delete the wireless interface's configuration previous added (mainly the router credentials) and reset the wireless interface
+* Delete the following content from <code>/etc/network/interfaces</code> file
 
-      sudo nano /etc/network/interfaces
+      allow-hotplug wlp2s0
+      iface wlp2s0 inet dhcp
+          wpa-essid Put_Your_Router_SSID_Name_Here
+          wpa-psk Put_Your_Router_Password_Here
+
+* Refresh NetworkManager configuration
+  
       sudo service NetworkManager restart
 
 * Reboot the system if you will (Optional)
 
       sudo init 0
+
+* If your hardware is a dualboot and you want to change grub order, then
+
+      sudo mv /etc/grub.d/30_os-prober /etc/grub.d/09_os-prober && sudo update-grub  
 
 * If your are using UEFI configure the bootloader at the BIOS
