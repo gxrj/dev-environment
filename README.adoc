@@ -6,6 +6,10 @@
 
 * link:github-token-persist.md[Persist your personal token into your Operating System]
 
+==== Linuxbrew Recipe:
+
+* link:linuxbrew-install.md[Install homebrew package manager on Linux]
+
 ==== Nodejs Recipe:
 
 * link:nodejs-install.md[Install nodejs and move its global modules to users scope folder]

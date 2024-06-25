@@ -1,19 +1,19 @@
 # nodejs-install-recipe
 
-<b>Preamble</b>: it uses snap format because there are lots of benefits with it (security and dependencies, for instance), if you do not have snap installed and don´t mind installing it the run <code>sudo apt install snapd -y</code> if you're running a debian-based distro
+<b>Preamble</b>: To follow this recipe you need linuxbrew package manager installed. If you haven't installed yet check it's [installation recipe right here.](./linuxbrew-install.md)
 
-- First, install nodejs using snap
+- First, install nodejs using homebrew package manager
 
-      $ sudo snap install node --classic
+      brew install node
       
 - Change <code>npm</code>'s default directory location by creating a folder for global installations
 
-      $ mkdir ~/.npm-global
+      mkdir ~/.npm-global
       
 - Configure npm to use the new directory path
 
-      $ npm config set prefix '~/.npm-global'
+      npm config set prefix '~/.npm-global'
      
 - Make system remenber npm modules default folder at startup and refresh the terminal
 
-      $ echo -e '# Nodejs modules default folder \nexport PATH=~/.npm-global/bin:$PATH' >> ~/.profile && source ~/.profile
+      echo -e '# Nodejs modules default folder \nexport PATH=~/.npm-global/bin:$PATH' >> ~/.profile && source ~/.profile

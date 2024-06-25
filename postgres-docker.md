@@ -1,7 +1,7 @@
 ## Configuration steps
 
 #### Creates a **docker volume** to persist data named as *postgres-data*
-    $ docker volume create postgres-data
+    docker volume create postgres-data
 
 **Obs, docker volumes are held into */var/snap/docker/common/var-lib-docker/volumes* directory**
 
@@ -13,16 +13,16 @@
 
 ###
 
-    $ docker run --name postgresql -d \
+    docker run --name postgresql -d \
         -e "POSTGRES_PASSWORD=1234" \
         -p 5432:5432 \
         -v postgres-data:/var/lib/postgresql/data \
         postgres:14-alpine
 
 #### Checks if the container is running
-    $ docker container list
+    docker container list
 
 #### Runs psql command inside postgresql container
-    $ docker exec -it \
+    docker exec -it \
         postgresql \
         psql -U postgres
