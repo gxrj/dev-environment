@@ -1,5 +1,8 @@
 # linuxbrew-install-recipe
 
+Reference:
+https://docs.brew.sh/Homebrew-on-Linux
+
 - Install homebrew dependencies
 
        sudo apt install build-essential procps curl file git
