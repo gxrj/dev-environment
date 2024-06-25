@@ -13,7 +13,7 @@ https://docs.brew.sh/Homebrew-on-Linux
 
 - Add Homebrew to the <code>PATH</code> variable
 
-        (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> $HOME/.bashrc
+        echo -e '\neval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> $HOME/.bashrc
         
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
@@ -27,7 +27,7 @@ https://docs.brew.sh/Homebrew-on-Linux
 
     or
 
-        echo 'export HOMEBREW_NO_ANALYTICS=1' >> $HOME/.bashrc
+        echo -e '\nexport HOMEBREW_NO_ANALYTICS=1' >> $HOME/.bashrc
 
 ## Miscellaneous
 
