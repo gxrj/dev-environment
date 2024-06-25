@@ -100,4 +100,4 @@ In the example used to install debian, the missing firmwares were: <code>rtl_nic
 
 ## Desktop and utilities install
 
-[Proceed the steps at this link](debian-install.md#systems-post-installation-steps-desktop-and-utilities)
+Proceed the steps at [this link to install desktop and utilities](debian-install.md#systems-post-installation-steps-desktop-and-utilities)
