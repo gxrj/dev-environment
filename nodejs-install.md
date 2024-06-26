@@ -17,3 +17,17 @@
 - Make system remenber npm modules default folder at startup and refresh the terminal
 
       echo -e '# Nodejs modules default folder \nexport PATH=~/.npm-global/bin:$PATH' >> ~/.profile && source ~/.profile
+
+## Switch from <code>NPM</code> to <code>PNPM</code>
+
+- Install <code>corepack</code>
+
+      brew install corepack
+
+- Install <code>PNPM</code>
+
+      corepack enable pnpm
+
+- Create an alias for <code>PNPM</code>
+
+      echo -e '\nalias pn=pnpm' >> .bashrc
