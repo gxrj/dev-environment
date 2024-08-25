@@ -31,3 +31,8 @@
 - Create an alias for <code>PNPM</code>
 
       echo -e '\nalias pn=pnpm' >> .bashrc
+
+- Set a location for modules installed by pnpm
+
+      pn config set store-dir ~/.pnpm-store
+  
