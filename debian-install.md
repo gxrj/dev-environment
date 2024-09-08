@@ -37,6 +37,13 @@ Debian provides a wide selction of desktop and window managers, the following op
 
       sudo apt install libreoffice-gtk
 
+### Option 3: LXQt
+
+* For <code>lxqt</code> and its the minimal set of utilities:
+
+      sudo apt install lxqt-core nm-tray lxqt-powermanagement pavcontrol-qt qterminal lightdm slick-greeter -y
+      sudo apt install qlipper lxqt-sudo ark papirus-icon-theme -y
+
 ## Hardware clock settings for dualboot
 
 * Set the system to local time if you have dualboot
