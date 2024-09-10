@@ -41,7 +41,7 @@ Debian provides a wide selction of desktop and window managers, the following op
 * For <code>lxqt</code> and its the minimal set of utilities:
 
       sudo apt install openbox nm-tray papirus-icon-theme -y
-      sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- -y
+      sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- diodon- -y
       sudo apt install ark lightdm slick-greeter -y
 
 ## Hardware clock settings for dualboot
