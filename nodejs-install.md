@@ -1,6 +1,6 @@
 # nodejs-install-recipe
 
-<b>Preamble</b>: To follow this recipe you need linuxbrew package manager installed. If you haven't installed yet check it's [installation recipe right here.](./linuxbrew-install.md)
+<b>Preamble</b>: To follow this recipe you need <code>linuxbrew package manager</code> installed. If you haven't installed yet check it's [installation recipe right here.](./linuxbrew-install.md)
 
 - Install nodejs using homebrew package manager
 
