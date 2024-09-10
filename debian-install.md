@@ -18,9 +18,8 @@ Debian provides a wide selction of desktop and window managers, the following op
 
 * For <code>kde-plasma</code> and its the minimal set of utilities:
 
-      sudo apt install kde-plasma-desktop plasma-nm ark kwrite gwenview qapt-deb-installer okular okular-extra-backends -y
-      sudo apt install papirus-icon-theme -y
-      sudo apt purge kdeconnect -y
+      sudo apt install kde-plasma-desktop kdeconnect- plasma-nm papirus-icon-theme -y
+      sudo apt install ark kwrite gwenview qapt-deb-installer okular okular-extra-backends -y
 
 * The following command sets <code>kde-plasma theme</code> for <code>libreoffice</code>:
 
@@ -41,9 +40,9 @@ Debian provides a wide selction of desktop and window managers, the following op
 
 * For <code>lxqt</code> and its the minimal set of utilities:
 
-      sudo apt install openbox nm-tray lightdm slick-greeter -y
-      sudo apt install lxqt-core lxqt-powermanagement pavucontrol-qt qterminal --no-install-recommends -y
-      sudo apt install qps lxqt-sudo ark papirus-icon-theme -y
+      sudo apt install openbox nm-tray papirus-icon-theme -y
+      sudo apt install lxqt-core qterminal xfwm4*- xarchiever- xscreensaver- qlipper- -y
+      sudo apt install ark lightdm slick-greeter -y
 
 ## Hardware clock settings for dualboot
 
