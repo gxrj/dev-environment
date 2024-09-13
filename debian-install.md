@@ -42,7 +42,7 @@ Debian provides a wide selction of desktop and window managers, the following op
 
       sudo apt install openbox nm-tray papirus-icon-theme -y
       sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- gnome*- diodon- -y
-      sudo apt install ark lightdm slick-greeter -y
+      sudo apt install ark qpdfview lightdm slick-greeter -y
 
 ## Hardware clock settings for dualboot
 
