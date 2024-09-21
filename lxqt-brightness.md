@@ -10,8 +10,8 @@
 #!/usr/bin/env bash
 
 output_device=$( /usr/bin/xrandr | awk '{i++}i==2{print;exit}' | awk '{print $1}' ) #value: eDP-1
-brightness=$( /usr/bin/xrandr --verbose | grep -i brightness | awk '{print $2 * 10}' )
-
+brightness=$( /usr/bin/xrandr --verbose | grep -i brightness | awk '{print $2 * 10}' ) # brightness level is converted from decimal to integer
+# check the args
 check_value() {
     if [ $1 == '-i' ]; then
         increase
@@ -21,7 +21,7 @@ check_value() {
         display_error
     fi
 
-    reset_scale
+    reset_scale # converts brightness level back to decimal
     /usr/bin/xrandr --output $output_device --brightness $brightness --gamma 0.7:0.7:0.7
 }
 
