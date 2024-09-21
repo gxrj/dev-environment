@@ -8,9 +8,10 @@
 
 ```shell
 #!/usr/bin/env bash
-
-output_device=$( /usr/bin/xrandr | awk '{i++}i==2{print;exit}' | awk '{print $1}' ) #value: eDP-1
-brightness=$( /usr/bin/xrandr --verbose | grep -i brightness | awk '{print $2 * 10}' ) #brightness level is converted from decimal to integer
+# output device value: eDP-1
+output_device=$( /usr/bin/xrandr | awk '{i++}i==2{print;exit}' | awk '{print $1}' ) 
+# brightness level is converted from decimal to integer
+brightness=$( /usr/bin/xrandr --verbose | grep -i brightness | awk '{print $2 * 10}' ) 
 # check the args
 check_value() {
     if [ $1 == '-i' ]; then
