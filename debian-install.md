@@ -46,7 +46,7 @@ Debian provides a wide selction of desktop and window managers, the following op
 
 * Set cursor size
 
-      echo 'Xcursor.size: 28' > ~/.Xresource
+      echo 'Xcursor.size: 28' >> ~/.Xresource
 
 * To set brightness control [click me](lxqt-brightness.md)
 
