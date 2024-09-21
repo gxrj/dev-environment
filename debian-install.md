@@ -44,7 +44,7 @@ Debian provides a wide selction of desktop and window managers, the following op
       sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- gnome*- diodon- -y
       sudo apt install ark qpdfview lightdm slick-greeter dmz-cursor-theme -y
 
-* Set cursor size
+* Persist custom cursor size
 
       echo 'Xcursor.size: 28' >> ~/.Xresource
 
