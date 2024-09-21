@@ -10,9 +10,9 @@
 #!/usr/bin/env bash
 # output device value: eDP-1
 output_device=$( /usr/bin/xrandr | awk '{i++}i==2{print;exit}' | awk '{print $1}' ) 
-# brightness level is converted from decimal to integer
+# brightness is converted from decimal to integer bellow
 brightness=$( /usr/bin/xrandr --verbose | grep -i brightness | awk '{print $2 * 10}' ) 
-# check the args
+# check the args and apply the respective action
 check_value() {
     if [ $1 == '-i' ]; then
         increase
