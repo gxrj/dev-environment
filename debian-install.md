@@ -44,6 +44,8 @@ Debian provides a wide selction of desktop and window managers, the following op
       sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- gnome*- diodon- -y
       sudo apt install ark qpdfview lightdm slick-greeter -y
 
+* To set brightness control [click me](lxqt-brightness.md)
+
 ## Hardware clock settings for dualboot
 
 * Set the system to local time if you have dualboot
