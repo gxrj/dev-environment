@@ -73,6 +73,8 @@ Debian provides a wide selction of desktop and window managers, the following op
 
       sudo init 0
 
+## Changing GRUB's boot order
+
 * If your hardware is a dualboot and you want to change grub order, then
 
       sudo mv /etc/grub.d/30_os-prober /etc/grub.d/09_os-prober && sudo update-grub  
