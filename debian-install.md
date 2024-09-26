@@ -73,6 +73,10 @@ Debian provides a wide selction of desktop and window managers, the following op
 
       sudo init 0
 
+## Customizing PS1
+
+      echo -e "# Customizing PS1 \nexport PS1=$'\[\033[01;32m\]\u27a1 \[\033[01;34m\]\w \[\033[00m\]\$ '" >> $HOME/.bashrc
+
 ## Changing GRUB's boot order
 
 * If your hardware is a dualboot and you want to change grub order, then
