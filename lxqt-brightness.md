@@ -1,4 +1,4 @@
-## setting brightness control on LXQt
+## setting brightness control by hotkeys on LXQt
 
 ### Create the script file
 
