@@ -77,4 +77,4 @@ fi
     sudo ln -s /opt/bin/brightness /usr/local/bin/brightness
 
 
-[Return to installation steps](debian-install.md#option-3-lxqt)
+[Return to installation steps](debian-install.md#hardware-clock-settings-for-dualboot)
