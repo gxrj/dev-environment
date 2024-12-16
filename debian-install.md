@@ -48,7 +48,11 @@ Debian provides a wide selction of desktop and window managers, the following op
 
       echo 'Xcursor.size: 28' >> ~/.Xresource
 
-* To set brightness control [click me](lxqt-brightness.md)
+* To set brightness control [follow this recipe](lxqt-brightness.md)
+
+### Option 4: Use window managers
+
+* If a window manager is desired instead of a desktop environment then [follow this recipe](windowmanagers.md)
 
 ## Hardware clock settings for dualboot
 
