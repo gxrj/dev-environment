@@ -47,4 +47,4 @@ So before choosing any window manager xorg must be installed first
       sudo apt install jwm
 
 
-[Return to installation steps](debian-install.md#option-4-use-window-managers)
+[Return to installation steps](debian-install.md#hardware-clock-settings-for-dualboot)
