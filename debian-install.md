@@ -41,7 +41,7 @@ Debian provides a wide selction of desktop and window managers, the following op
 * For <code>lxqt</code> and its the minimal set of utilities:
 
       sudo apt install openbox nm-tray papirus-icon-theme -y
-      sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- gnome*- diodon- -y
+      sudo apt install lxqt-core qterminal xfwm4*- xarchiver- xscreensaver- gnome*- diodon- qlipper*- -y
       sudo apt install ark qpdfview lightdm slick-greeter dmz-cursor-theme -y
 
 * Persist custom cursor size
@@ -71,7 +71,7 @@ Debian provides a wide selction of desktop and window managers, the following op
 
 * Refresh NetworkManager configuration
   
-      sudo service NetworkManager restart
+      sudo /usr/sbin/service NetworkManager restart
 
 * Reboot the system if you will (Optional)
 
